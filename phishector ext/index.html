@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title text-color="white">Phishector</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		
+	<style>
+		button {
+        display: inline-block;
+        background-color: #006088;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px;
+        width: 100px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+	  button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #f7c2f9;
+      }
+      button:hover span {
+        padding-right: 25px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+	</style>  
+    </head>
+    <body>
+		
+        
+        <h1 class="main_title"><span class="blinking">Phishector</span></h1>
+		
+        
+        <div class="ta-c" >
+            <input type="checkbox" id="1" class="vh">
+            <label for="1">Copy URL</label>
+        </div>
+        <div class='data_elements'>
+            <div>
+                <input type="text" value="Enter URL">
+                <button type="button">GO</button>
+            </div>
+            
+        </div>
+        <div class="abtus">
+		<button type="button" align="right" onclick=" window.open('http://google.com','_blank')">VISIT US</button>
+		</div>
+        
+
+    </body>
+</html>
